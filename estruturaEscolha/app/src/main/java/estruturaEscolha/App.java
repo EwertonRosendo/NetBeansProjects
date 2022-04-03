@@ -3,18 +3,27 @@
  */
 package estruturaEscolha;
 
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) {
-        int codigoProduto = 2;
         
-        switch(codigoProduto){
+        int num;
+        
+        Scanner leitor = new Scanner(System.in);
+        
+        num = leitor.nextInt();
+        
+        if (num >= 100 && num <= 200){
             
-            case 1:
-                break;
-            case 2:
-                break;
-            default:
-                            }
+            System.out.println("ESTA NO INTERVALO");
+        
+        }else{
+            System.out.println("NAO ESTA NO INTERVALO");
+        
+        
+        }
+        
     }
 }
